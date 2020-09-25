@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="malltest07" />
+        <module name="malltest06" />
+        <module name="malltest05" />
+        <module name="malltest04" />
+        <module name="malltest03" />
+        <module name="malltest02" />
+        <module name="malltest01" />
+        <module name="malltestoss" />
+        <module name="malltest-aop" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="malltest-aop" target="1.8" />
+      <module name="malltest01" target="1.8" />
+      <module name="malltest02" target="1.8" />
+      <module name="malltest03" target="1.8" />
+      <module name="malltest04" target="1.8" />
+      <module name="malltest05" target="1.8" />
+      <module name="malltest06" target="1.8" />
+      <module name="malltest07" target="1.8" />
+      <module name="malltestoss" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="malltest-aop" options="-parameters" />
+      <module name="malltest01" options="-parameters" />
+      <module name="malltest02" options="-parameters" />
+      <module name="malltest03" options="-parameters" />
+      <module name="malltest04" options="-parameters" />
+      <module name="malltest05" options="-parameters" />
+      <module name="malltest06" options="-parameters" />
+      <module name="malltest07" options="-parameters" />
+      <module name="malltestoss" options="-parameters" />
+    </option>
+  </component>
+</project>

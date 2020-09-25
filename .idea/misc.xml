@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/malltest/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest02/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest03/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest04/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest05/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest06/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/malltestoss/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest07/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

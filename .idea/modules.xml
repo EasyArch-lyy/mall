@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/malltest-aop/malltest-aop.iml" filepath="$PROJECT_DIR$/malltest-aop/malltest-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest01/malltest01.iml" filepath="$PROJECT_DIR$/malltest01/malltest01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest02/malltest02.iml" filepath="$PROJECT_DIR$/malltest02/malltest02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest03/malltest03.iml" filepath="$PROJECT_DIR$/malltest03/malltest03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest04/malltest04.iml" filepath="$PROJECT_DIR$/malltest04/malltest04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest05/malltest05.iml" filepath="$PROJECT_DIR$/malltest05/malltest05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest06/malltest06.iml" filepath="$PROJECT_DIR$/malltest06/malltest06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest07/malltest07.iml" filepath="$PROJECT_DIR$/malltest07/malltest07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltestoss/malltestoss.iml" filepath="$PROJECT_DIR$/malltestoss/malltestoss.iml" />
+    </modules>
+  </component>
+</project>
