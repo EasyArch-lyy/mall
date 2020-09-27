@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8087
 
 spring:
   datasource:
@@ -25,7 +25,7 @@ spring:
       cluster-nodes: 39.100.149.36:9300 # es的连接地址及端口号
       cluster-name: elasticsearch # es集群的名称
     mongodb:
-      host: localhost # mongodb的连接地址
+      host: 39.100.149.36 # mongodb的连接地址
       port: 27017 # mongodb的连接端口号
       database: mall-port # mongodb的连接的数据库
 

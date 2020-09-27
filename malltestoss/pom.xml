@@ -78,17 +78,28 @@
             <artifactId>minio</artifactId>
             <version>3.0.10</version>
         </dependency>
-        <!-- OSS SDK 相关依赖 -->
+        <!-- 阿里OSS -->
         <dependency>
             <groupId>com.aliyun.oss</groupId>
             <artifactId>aliyun-sdk-oss</artifactId>
-            <version>2.5.0</version>
+            <version>3.8.0</version>
         </dependency>
         <!--Hutool Java工具包-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>4.5.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.10</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

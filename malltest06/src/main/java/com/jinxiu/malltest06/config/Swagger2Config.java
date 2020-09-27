@@ -23,13 +23,15 @@ import java.util.List;
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
+
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
+
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
                 //为当前包下controller生成API文档
-                .apis(RequestHandlerSelectors.basePackage("com.macro.mall.tiny.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.jinxiu.malltest06.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 //添加登录认证
@@ -38,6 +40,7 @@ public class Swagger2Config {
     }
 
     private ApiInfo apiInfo() {
+
         return new ApiInfoBuilder()
                 .title("SwaggerUI演示")
                 .description("mall-tiny")
@@ -47,6 +50,7 @@ public class Swagger2Config {
     }
 
     private List<ApiKey> securitySchemes() {
+
         //设置请求头信息
         List<ApiKey> result = new ArrayList<>();
         ApiKey apiKey = new ApiKey("Authorization", "Authorization", "header");
@@ -61,7 +65,8 @@ public class Swagger2Config {
         return result;
     }
 
-    private SecurityContext getContextByPath(String pathRegex){
+    private SecurityContext getContextByPath(String pathRegex) {
+
         return SecurityContext.builder()
                 .securityReferences(defaultAuth())
                 .forPaths(PathSelectors.regex(pathRegex))
@@ -69,6 +74,7 @@ public class Swagger2Config {
     }
 
     private List<SecurityReference> defaultAuth() {
+
         List<SecurityReference> result = new ArrayList<>();
         AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
         AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];

@@ -91,7 +91,7 @@ public class OssServiceImpl implements OssService {
 		filename = "http://".concat(ALIYUN_OSS_BUCKET_NAME).concat(".").concat(ALIYUN_OSS_ENDPOINT).concat("/").concat(filename);
 		result.setFilename(filename);
 		result.setSize(request.getParameter("size"));
-		result.setMimeType(request.getParameter("mimeType"));
+		result.setMimeType(request.getParameter("Type"));
 		result.setWidth(request.getParameter("width"));
 		result.setHeight(request.getParameter("height"));
 		return result;

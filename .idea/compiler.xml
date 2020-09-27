@@ -14,10 +14,12 @@
         <module name="malltest02" />
         <module name="malltest01" />
         <module name="malltestoss" />
+        <module name="elk" />
         <module name="malltest-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="elk" target="1.8" />
       <module name="malltest-aop" target="1.8" />
       <module name="malltest01" target="1.8" />
       <module name="malltest02" target="1.8" />
@@ -31,6 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elk" options="-parameters" />
       <module name="malltest-aop" options="-parameters" />
       <module name="malltest01" options="-parameters" />
       <module name="malltest02" options="-parameters" />

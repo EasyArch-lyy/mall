@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/elk/elk.iml" filepath="$PROJECT_DIR$/elk/elk.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-aop/malltest-aop.iml" filepath="$PROJECT_DIR$/malltest-aop/malltest-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest01/malltest01.iml" filepath="$PROJECT_DIR$/malltest01/malltest01.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest02/malltest02.iml" filepath="$PROJECT_DIR$/malltest02/malltest02.iml" />

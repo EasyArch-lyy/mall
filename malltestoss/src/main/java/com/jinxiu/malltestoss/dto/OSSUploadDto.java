@@ -3,7 +3,7 @@ package com.jinxiu.malltestoss.dto;
 /**
  * 文件上传返回结果
  */
-public class MinioUploadDto {
+public class OSSUploadDto {
 
     private String url;
     private String name;
