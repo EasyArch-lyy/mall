@@ -15,12 +15,14 @@
         <module name="malltest01" />
         <module name="malltestoss" />
         <module name="elk" />
+        <module name="malltest-redis" />
         <module name="malltest-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="elk" target="1.8" />
       <module name="malltest-aop" target="1.8" />
+      <module name="malltest-redis" target="1.8" />
       <module name="malltest01" target="1.8" />
       <module name="malltest02" target="1.8" />
       <module name="malltest03" target="1.8" />
@@ -35,6 +37,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elk" options="-parameters" />
       <module name="malltest-aop" options="-parameters" />
+      <module name="malltest-redis" options="-parameters" />
       <module name="malltest01" options="-parameters" />
       <module name="malltest02" options="-parameters" />
       <module name="malltest03" options="-parameters" />

@@ -23,8 +23,8 @@ spring:
       repositories:
         enabled: true
 #        Deprecated configuration property 'spring.data.elasticsearch.cluster-nodes'
-#      cluster-nodes: 39.100.149.36:9300 # es的连接地址及端口号
-#      cluster-name: elasticsearch # es集群的名称
+      cluster-nodes: 39.100.149.36:9300 # es的连接地址及端口号
+      cluster-name: elasticsearch # es集群的名称
 
 mybatis:
   mapper-locations:

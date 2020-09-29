@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/malltestoss/pom.xml" />
         <option value="$PROJECT_DIR$/malltest07/pom.xml" />
         <option value="$PROJECT_DIR$/elk/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-redis/pom.xml" />
       </list>
     </option>
   </component>
