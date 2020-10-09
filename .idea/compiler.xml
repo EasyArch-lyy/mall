@@ -17,6 +17,7 @@
         <module name="elk" />
         <module name="malltest-redis" />
         <module name="malltest-aop" />
+        <module name="malltest08" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="malltest05" target="1.8" />
       <module name="malltest06" target="1.8" />
       <module name="malltest07" target="1.8" />
+      <module name="malltest08" target="1.8" />
       <module name="malltestoss" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -45,6 +47,7 @@
       <module name="malltest05" options="-parameters" />
       <module name="malltest06" options="-parameters" />
       <module name="malltest07" options="-parameters" />
+      <module name="malltest08" options="-parameters" />
       <module name="malltestoss" options="-parameters" />
     </option>
   </component>
