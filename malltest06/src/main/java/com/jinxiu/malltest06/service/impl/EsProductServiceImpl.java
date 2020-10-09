@@ -16,14 +16,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-
 /**
  * 商品搜索管理Service实现类
- * Created by macro on 2018/6/19.
  */
 @Service
 public class EsProductServiceImpl implements EsProductService {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(EsProductServiceImpl.class);
+
     @Autowired
     private EsProductDao productDao;
     @Autowired

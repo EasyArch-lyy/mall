@@ -1,12 +1,10 @@
 package com.jinxiu.malltest02.service;
 
 import com.jinxiu.malltest02.mbg.model.PmsBrand;
-
 import java.util.List;
 
 /**
  * PmsBrandService
- * Created by macro on 2019/4/19.
  */
 public interface PmsBrandService {
     List<PmsBrand> listAllBrand();

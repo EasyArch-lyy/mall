@@ -2,6 +2,7 @@ package com.jinxiu.malltest06.controller;
 
 import com.jinxiu.malltest06.common.api.CommonPage;
 import com.jinxiu.malltest06.common.api.CommonResult;
+import com.jinxiu.malltest06.config.EsConf;
 import com.jinxiu.malltest06.nosql.elasticsearch.document.EsProduct;
 import com.jinxiu.malltest06.service.EsProductService;
 import io.swagger.annotations.Api;
@@ -26,6 +27,9 @@ public class EsProductController {
 
     @Autowired
     private EsProductService esProductService;
+
+    @Autowired
+    private EsConf esConf;
 
     @ApiOperation(value = "导入所有数据中商品到es")
     @RequestMapping(value = "/importAll", method = RequestMethod.POST)
