@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+
 /**
  * 品牌管理Controller
  */
@@ -22,6 +23,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/brand")
 public class PmsBrandController {
+
     @Autowired
     private PmsBrandService brandService;
 
