@@ -2,6 +2,7 @@ package com.jinxiu.malltest08.service.impl;
 
 import com.jinxiu.malltest08.dao.EsProductDao;
 import com.jinxiu.malltest08.nosql.elasticsearch.document.EsProduct;
+import com.jinxiu.malltest08.nosql.elasticsearch.repository.EsProductRepository;
 import com.jinxiu.malltest08.service.EsProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

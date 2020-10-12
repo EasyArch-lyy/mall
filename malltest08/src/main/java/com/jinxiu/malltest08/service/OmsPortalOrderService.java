@@ -4,9 +4,6 @@ import com.jinxiu.malltest08.common.api.CommonResult;
 import com.jinxiu.malltest08.dto.OrderParam;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * 前台订单管理Service
- */
 public interface OmsPortalOrderService {
 
     /**

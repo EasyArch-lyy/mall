@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/elk/elk.iml" filepath="$PROJECT_DIR$/elk/elk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaclient/eurekaclient.iml" filepath="$PROJECT_DIR$/eurekaclient/eurekaclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-aop/malltest-aop.iml" filepath="$PROJECT_DIR$/malltest-aop/malltest-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-docker/malltest-docker.iml" filepath="$PROJECT_DIR$/malltest-docker/malltest-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" filepath="$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-oss/malltest-oss.iml" filepath="$PROJECT_DIR$/malltest-oss/malltest-oss.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-redis/malltest-redis.iml" filepath="$PROJECT_DIR$/malltest-redis/malltest-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest01/malltest01.iml" filepath="$PROJECT_DIR$/malltest01/malltest01.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest02/malltest02.iml" filepath="$PROJECT_DIR$/malltest02/malltest02.iml" />
@@ -13,7 +18,6 @@
       <module fileurl="file://$PROJECT_DIR$/malltest06/malltest06.iml" filepath="$PROJECT_DIR$/malltest06/malltest06.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest07/malltest07.iml" filepath="$PROJECT_DIR$/malltest07/malltest07.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest08/malltest08.iml" filepath="$PROJECT_DIR$/malltest08/malltest08.iml" />
-      <module fileurl="file://$PROJECT_DIR$/malltestoss/malltestoss.iml" filepath="$PROJECT_DIR$/malltestoss/malltestoss.iml" />
     </modules>
   </component>
 </project>

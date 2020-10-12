@@ -6,6 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="malltest-docker" />
+        <module name="malltest-hutool" />
+        <module name="elk" />
+        <module name="eurekaclient" />
+        <module name="malltest08" />
         <module name="malltest07" />
         <module name="malltest06" />
         <module name="malltest05" />
@@ -13,16 +18,25 @@
         <module name="malltest03" />
         <module name="malltest02" />
         <module name="malltest01" />
-        <module name="malltestoss" />
-        <module name="elk" />
-        <module name="malltest-redis" />
+        <module name="eureka" />
         <module name="malltest-aop" />
-        <module name="malltest08" />
+        <module name="malltest-redis" />
+      </profile>
+      <profile name="Annotation profile for malltestoss" enabled="true">
+        <sourceOutputDir name="../malltestoss/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../malltestoss/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="malltest-oss" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="elk" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="eurekaclient" target="1.8" />
       <module name="malltest-aop" target="1.8" />
+      <module name="malltest-docker" target="1.8" />
+      <module name="malltest-hutool" target="1.8" />
+      <module name="malltest-oss" target="1.8" />
       <module name="malltest-redis" target="1.8" />
       <module name="malltest01" target="1.8" />
       <module name="malltest02" target="1.8" />
@@ -32,13 +46,17 @@
       <module name="malltest06" target="1.8" />
       <module name="malltest07" target="1.8" />
       <module name="malltest08" target="1.8" />
-      <module name="malltestoss" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elk" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eurekaclient" options="-parameters" />
       <module name="malltest-aop" options="-parameters" />
+      <module name="malltest-docker" options="-parameters" />
+      <module name="malltest-hutool" options="-parameters" />
+      <module name="malltest-oss" options="-parameters" />
       <module name="malltest-redis" options="-parameters" />
       <module name="malltest01" options="-parameters" />
       <module name="malltest02" options="-parameters" />
@@ -48,7 +66,6 @@
       <module name="malltest06" options="-parameters" />
       <module name="malltest07" options="-parameters" />
       <module name="malltest08" options="-parameters" />
-      <module name="malltestoss" options="-parameters" />
     </option>
   </component>
 </project>

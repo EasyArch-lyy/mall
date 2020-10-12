@@ -1,13 +1,12 @@
 package com.jinxiu.malltest08.config;
 
-import com.macro.mall.tiny.dto.QueueEnum;
+import com.jinxiu.malltest08.dto.QueueEnum;
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * 消息队列配置
- * Created by macro on 2018/9/14.
  */
 @Configuration
 public class RabbitMqConfig {

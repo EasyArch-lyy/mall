@@ -1,5 +1,7 @@
 package com.jinxiu.malltest08.dto;
 
+import com.jinxiu.malltest08.mbg.model.UmsAdmin;
+import com.jinxiu.malltest08.mbg.model.UmsPermission;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,12 +1,12 @@
 package com.jinxiu.malltest08.config;
 
-import com.macro.mall.tiny.component.JwtAuthenticationTokenFilter;
-import com.macro.mall.tiny.component.RestAuthenticationEntryPoint;
-import com.macro.mall.tiny.component.RestfulAccessDeniedHandler;
-import com.macro.mall.tiny.dto.AdminUserDetails;
-import com.macro.mall.tiny.mbg.model.UmsAdmin;
-import com.macro.mall.tiny.mbg.model.UmsPermission;
-import com.macro.mall.tiny.service.UmsAdminService;
+import com.jinxiu.malltest08.component.JwtAuthenticationTokenFilter;
+import com.jinxiu.malltest08.component.RestAuthenticationEntryPoint;
+import com.jinxiu.malltest08.component.RestfulAccessDeniedHandler;
+import com.jinxiu.malltest08.dto.AdminUserDetails;
+import com.jinxiu.malltest08.mbg.model.UmsAdmin;
+import com.jinxiu.malltest08.mbg.model.UmsPermission;
+import com.jinxiu.malltest08.service.UmsAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,13 +23,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
 import java.util.List;
-
 
 /**
  * SpringSecurity的配置
- * Created by macro on 2018/4/26.
  */
 @Configuration
 @EnableWebSecurity

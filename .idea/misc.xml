@@ -15,6 +15,10 @@
         <option value="$PROJECT_DIR$/elk/pom.xml" />
         <option value="$PROJECT_DIR$/malltest-redis/pom.xml" />
         <option value="$PROJECT_DIR$/malltest08/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaclient/pom.xml" />
       </list>
     </option>
   </component>

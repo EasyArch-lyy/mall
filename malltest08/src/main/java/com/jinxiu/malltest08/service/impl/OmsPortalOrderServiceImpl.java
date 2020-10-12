@@ -3,6 +3,7 @@ package com.jinxiu.malltest08.service.impl;
 import com.jinxiu.malltest08.common.api.CommonResult;
 import com.jinxiu.malltest08.component.CancelOrderSender;
 import com.jinxiu.malltest08.dto.OrderParam;
+import com.jinxiu.malltest08.service.OmsPortalOrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
     @Autowired
     private CancelOrderSender cancelOrderSender;
 
-    @Override
     public CommonResult generateOrder(OrderParam orderParam) {
         //todo 执行一系类下单操作，具体参考mall项目
         LOGGER.info("process generateOrder");
@@ -26,7 +26,6 @@ public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
         return CommonResult.success(null, "下单成功");
     }
 
-    @Override
     public void cancelOrder(Long orderId) {
         //todo 执行一系类取消订单操作，具体参考mall项目
         LOGGER.info("process cancelOrder orderId:{}",orderId);
