@@ -24,8 +24,8 @@ mybatis:
 #minio:
 #  endpoint: oss-cn-beijing.aliyuncs.com           #MinIO服务所在地址
 #  bucketName:                                     #存储桶名称
-#  accessKey: LTAI4G1rTK2wYC6cuTYN9vW5             #访问的key
-#  secretKey: 9mUbPO5JhFGzRHjsmAYi7lC5wWmAFQ       #访问的秘钥
+#  accessKey:       #访问的key
+#  secretKey:       #访问的秘钥
 
 ## OSS相关配置信息
 aliyun:
