@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/malltest-aop/malltest-aop.iml" filepath="$PROJECT_DIR$/malltest-aop/malltest-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-docker/malltest-docker.iml" filepath="$PROJECT_DIR$/malltest-docker/malltest-docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" filepath="$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-log/malltest-log.iml" filepath="$PROJECT_DIR$/malltest-log/malltest-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-oss/malltest-oss.iml" filepath="$PROJECT_DIR$/malltest-oss/malltest-oss.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-redis/malltest-redis.iml" filepath="$PROJECT_DIR$/malltest-redis/malltest-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest01/malltest01.iml" filepath="$PROJECT_DIR$/malltest01/malltest01.iml" />
