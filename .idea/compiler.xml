@@ -11,6 +11,7 @@
         <module name="malltest-hutool" />
         <module name="elk" />
         <module name="eurekaclient" />
+        <module name="malltest09" />
         <module name="malltest08" />
         <module name="malltest07" />
         <module name="malltest06" />
@@ -48,6 +49,7 @@
       <module name="malltest06" target="1.8" />
       <module name="malltest07" target="1.8" />
       <module name="malltest08" target="1.8" />
+      <module name="malltest09" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -69,6 +71,7 @@
       <module name="malltest06" options="-parameters" />
       <module name="malltest07" options="-parameters" />
       <module name="malltest08" options="-parameters" />
+      <module name="malltest09" options="-parameters" />
     </option>
   </component>
 </project>
