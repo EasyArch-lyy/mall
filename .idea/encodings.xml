@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaclient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/malltest-docker-compose/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-docker/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-hutool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-log/src/main/java" charset="UTF-8" />

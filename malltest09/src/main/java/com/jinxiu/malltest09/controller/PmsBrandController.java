@@ -1,9 +1,9 @@
 package com.jinxiu.malltest09.controller;
 
-import com.macro.mall.tiny.common.api.CommonPage;
-import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.mbg.model.PmsBrand;
-import com.macro.mall.tiny.service.PmsBrandService;
+import com.jinxiu.malltest09.common.api.CommonPage;
+import com.jinxiu.malltest09.common.api.CommonResult;
+import com.jinxiu.malltest09.mbg.model.PmsBrand;
+import com.jinxiu.malltest09.service.PmsBrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -14,13 +14,11 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
 /**
  * 品牌管理Controller
- * Created by macro on 2019/4/19.
  */
 @Api(tags = "PmsBrandController", description = "商品品牌管理")
 @Controller
@@ -96,6 +94,7 @@ public class PmsBrandController {
                                                         @ApiParam("页码") Integer pageNum,
                                                         @RequestParam(value = "pageSize", defaultValue = "3")
                                                         @ApiParam("每页数量") Integer pageSize) {
+
         List<PmsBrand> brandList = brandService.listBrand(pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(brandList));
     }

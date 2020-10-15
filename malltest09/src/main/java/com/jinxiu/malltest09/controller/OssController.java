@@ -1,10 +1,10 @@
 package com.jinxiu.malltest09.controller;
 
 
-import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.dto.OssCallbackResult;
-import com.macro.mall.tiny.dto.OssPolicyResult;
-import com.macro.mall.tiny.service.impl.OssServiceImpl;
+import com.jinxiu.malltest09.common.api.CommonResult;
+import com.jinxiu.malltest09.dto.OssCallbackResult;
+import com.jinxiu.malltest09.dto.OssPolicyResult;
+import com.jinxiu.malltest09.service.impl.OssServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,12 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * Oss相关操作接口
- * Created by macro on 2018/4/26.
  */
 @Controller
 @Api(tags = "OssController", description = "Oss管理")

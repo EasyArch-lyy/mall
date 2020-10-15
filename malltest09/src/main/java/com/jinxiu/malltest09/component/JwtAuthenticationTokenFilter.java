@@ -1,6 +1,6 @@
 package com.jinxiu.malltest09.component;
 
-import com.macro.mall.tiny.common.utils.JwtTokenUtil;
+import com.jinxiu.malltest09.common.utils.JwtTokenUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
-
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +19,6 @@ import java.io.IOException;
 
 /**
  * JWT登录授权过滤器
- * Created by macro on 2018/4/26.
  */
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtAuthenticationTokenFilter.class);

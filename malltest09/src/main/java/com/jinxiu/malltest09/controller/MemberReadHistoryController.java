@@ -1,19 +1,17 @@
 package com.jinxiu.malltest09.controller;
 
-import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.nosql.mongodb.document.MemberReadHistory;
-import com.macro.mall.tiny.service.MemberReadHistoryService;
+import com.jinxiu.malltest09.common.api.CommonResult;
+import com.jinxiu.malltest09.nosql.mongodb.document.MemberReadHistory;
+import com.jinxiu.malltest09.service.MemberReadHistoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 /**
  * 会员商品浏览记录管理Controller
- * Created by macro on 2018/8/3.
  */
 @Controller
 @Api(tags = "MemberReadHistoryController", description = "会员商品浏览记录管理")

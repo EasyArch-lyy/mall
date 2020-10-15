@@ -1,10 +1,10 @@
 package com.jinxiu.malltest09.controller;
 
-import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.dto.UmsAdminLoginParam;
-import com.macro.mall.tiny.mbg.model.UmsAdmin;
-import com.macro.mall.tiny.mbg.model.UmsPermission;
-import com.macro.mall.tiny.service.UmsAdminService;
+import com.jinxiu.malltest09.common.api.CommonResult;
+import com.jinxiu.malltest09.dto.UmsAdminLoginParam;
+import com.jinxiu.malltest09.mbg.model.UmsAdmin;
+import com.jinxiu.malltest09.mbg.model.UmsPermission;
+import com.jinxiu.malltest09.service.UmsAdminService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +12,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 后台用户管理
- * Created by macro on 2018/4/26.
  */
 @Controller
 @Api(tags = "UmsAdminController", description = "后台用户管理")

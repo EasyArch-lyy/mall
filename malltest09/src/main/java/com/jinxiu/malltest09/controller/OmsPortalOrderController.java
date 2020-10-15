@@ -1,7 +1,7 @@
 package com.jinxiu.malltest09.controller;
 
-import com.macro.mall.tiny.dto.OrderParam;
-import com.macro.mall.tiny.service.OmsPortalOrderService;
+import com.jinxiu.malltest09.dto.OrderParam;
+import com.jinxiu.malltest09.service.OmsPortalOrderService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 订单管理Controller
- * Created by macro on 2018/8/30.
  */
 @Controller
 @Api(tags = "OmsPortalOrderController", description = "订单管理")

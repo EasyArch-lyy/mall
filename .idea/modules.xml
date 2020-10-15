@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/eurekaclient/eurekaclient.iml" filepath="$PROJECT_DIR$/eurekaclient/eurekaclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-aop/malltest-aop.iml" filepath="$PROJECT_DIR$/malltest-aop/malltest-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-docker/malltest-docker.iml" filepath="$PROJECT_DIR$/malltest-docker/malltest-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-docker-compose/malltest-docker-compose.iml" filepath="$PROJECT_DIR$/malltest-docker-compose/malltest-docker-compose.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" filepath="$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-log/malltest-log.iml" filepath="$PROJECT_DIR$/malltest-log/malltest-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-oss/malltest-oss.iml" filepath="$PROJECT_DIR$/malltest-oss/malltest-oss.iml" />

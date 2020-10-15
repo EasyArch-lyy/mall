@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="malltest-docker" />
         <module name="malltest-log" />
+        <module name="malltest-docker-compose" />
         <module name="malltest-hutool" />
         <module name="elk" />
         <module name="eurekaclient" />
@@ -37,6 +38,7 @@
       <module name="eurekaclient" target="1.8" />
       <module name="malltest-aop" target="1.8" />
       <module name="malltest-docker" target="1.8" />
+      <module name="malltest-docker-compose" target="1.8" />
       <module name="malltest-hutool" target="1.8" />
       <module name="malltest-log" target="1.8" />
       <module name="malltest-oss" target="1.8" />
@@ -59,6 +61,7 @@
       <module name="eurekaclient" options="-parameters" />
       <module name="malltest-aop" options="-parameters" />
       <module name="malltest-docker" options="-parameters" />
+      <module name="malltest-docker-compose" options="-parameters" />
       <module name="malltest-hutool" options="-parameters" />
       <module name="malltest-log" options="-parameters" />
       <module name="malltest-oss" options="-parameters" />
