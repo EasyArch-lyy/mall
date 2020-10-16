@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/malltest-hutool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-log/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/malltest-rabbitmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest02/src/main/java" charset="UTF-8" />

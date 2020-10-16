@@ -9,8 +9,8 @@
         <module name="malltest-docker" />
         <module name="malltest-log" />
         <module name="malltest-docker-compose" />
-        <module name="malltest-hutool" />
         <module name="elk" />
+        <module name="malltest-rabbitmq" />
         <module name="eurekaclient" />
         <module name="malltest09" />
         <module name="malltest08" />
@@ -20,10 +20,11 @@
         <module name="malltest04" />
         <module name="malltest03" />
         <module name="malltest02" />
-        <module name="malltest01" />
+        <module name="malltest-hutool" />
         <module name="eureka" />
         <module name="malltest-aop" />
         <module name="malltest-redis" />
+        <module name="malltest01" />
       </profile>
       <profile name="Annotation profile for malltestoss" enabled="true">
         <sourceOutputDir name="../malltestoss/target/generated-sources/annotations" />
@@ -42,6 +43,7 @@
       <module name="malltest-hutool" target="1.8" />
       <module name="malltest-log" target="1.8" />
       <module name="malltest-oss" target="1.8" />
+      <module name="malltest-rabbitmq" target="1.8" />
       <module name="malltest-redis" target="1.8" />
       <module name="malltest01" target="1.8" />
       <module name="malltest02" target="1.8" />
@@ -65,6 +67,7 @@
       <module name="malltest-hutool" options="-parameters" />
       <module name="malltest-log" options="-parameters" />
       <module name="malltest-oss" options="-parameters" />
+      <module name="malltest-rabbitmq" options="-parameters" />
       <module name="malltest-redis" options="-parameters" />
       <module name="malltest01" options="-parameters" />
       <module name="malltest02" options="-parameters" />
