@@ -29,6 +29,7 @@ import java.util.List;
  */
 @Service
 public class UmsAdminServiceImpl implements UmsAdminService {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(UmsAdminServiceImpl.class);
     @Autowired
     private UserDetailsService userDetailsService;
@@ -80,6 +81,8 @@ public class UmsAdminServiceImpl implements UmsAdminService {
         try {
             UserDetails userDetails = userDetailsService.loadUserByUsername(username);
             if (!passwordEncoder.matches(password, userDetails.getPassword())) {
+                LOGGER.info("账号对应的密码:"+userDetails.getPassword());
+                LOGGER.info("登录填入的密码:"+passwordEncoder.encode(password));
                 throw new BadCredentialsException("密码不正确");
             }
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
