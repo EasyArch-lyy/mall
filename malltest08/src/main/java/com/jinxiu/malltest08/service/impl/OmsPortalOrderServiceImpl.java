@@ -14,10 +14,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {
+
     private static Logger LOGGER = LoggerFactory.getLogger(OmsPortalOrderServiceImpl.class);
     @Autowired
     private CancelOrderSender cancelOrderSender;
 
+    @Override
     public CommonResult generateOrder(OrderParam orderParam) {
         //todo 执行一系类下单操作，具体参考mall项目
         LOGGER.info("process generateOrder");

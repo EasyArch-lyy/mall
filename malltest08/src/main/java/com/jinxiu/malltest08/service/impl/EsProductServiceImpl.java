@@ -21,11 +21,14 @@ import java.util.List;
  */
 @Service
 public class EsProductServiceImpl implements EsProductService {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(EsProductServiceImpl.class);
     @Autowired
     private EsProductDao productDao;
     @Autowired
     private EsProductRepository productRepository;
+    @Autowired
+//    private ElasticsearchTemplate elasticsearchTemplate;
 
     @Override
     public int importAll() {

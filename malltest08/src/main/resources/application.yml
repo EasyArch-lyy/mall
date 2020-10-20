@@ -22,15 +22,15 @@ spring:
     elasticsearch:
       repositories:
         enabled: true
-      cluster-nodes: 127.0.0.1:9300 # es的连接地址及端口号
-      cluster-name: elasticsearch # es集群的名称
+#      cluster-nodes: 127.0.0.1:9300 # es的连接地址及端口号
+#      cluster-name: elasticsearch # es集群的名称
     mongodb:
       host: 39.100.149.36 # mongodb的连接地址
       port: 27017 # mongodb的连接端口号
       database: mall-port # mongodb的连接的数据库
   rabbitmq:
     host: 39.100.149.36 # rabbitmq的连接地址
-    port: 5672 # rabbitmq的连接端口号
+    port: 5671 # rabbitmq的连接端口号
     virtual-host: /mall # rabbitmq的虚拟host
     username: mall # rabbitmq的用户名
     password: mall # rabbitmq的密码
