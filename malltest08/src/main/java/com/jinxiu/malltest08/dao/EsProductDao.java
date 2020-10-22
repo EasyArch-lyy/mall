@@ -2,6 +2,7 @@ package com.jinxiu.malltest08.dao;
 
 import com.jinxiu.malltest08.nosql.elasticsearch.document.EsProduct;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**

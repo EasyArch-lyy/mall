@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -316,7 +317,7 @@ public class HutoolController {
         LOGGER.info("DigestUtil sha256Hex:{}", result);
         //生成Bcrypt加密后的密文，并校验
         String hashPwd = DigestUtil.bcrypt(password);
-        boolean check = DigestUtil.bcryptCheck(password,hashPwd);
+        boolean check = DigestUtil.bcryptCheck(password, hashPwd);
         LOGGER.info("DigestUtil bcryptCheck:{}", check);
         return CommonResult.success(null, "操作成功");
     }

@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -54,7 +55,7 @@ public class JwtTokenUtil {
                     .parseClaimsJws(token)
                     .getBody();
         } catch (Exception e) {
-            LOGGER.info("JWT格式验证失败:{}",token);
+            LOGGER.info("JWT格式验证失败:{}", token);
         }
         return claims;
     }
@@ -73,7 +74,7 @@ public class JwtTokenUtil {
         String username;
         try {
             Claims claims = getClaimsFromToken(token);
-            username =  claims.getSubject();
+            username = claims.getSubject();
         } catch (Exception e) {
             username = null;
         }

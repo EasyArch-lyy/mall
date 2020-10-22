@@ -16,22 +16,22 @@ public class FanoutReceiver {
     }
 
     @RabbitListener(queues = "#{fanoutQueue2.name}")
-    public void receive2(String in){
+    public void receive2(String in) {
         receive(in, 2);
     }
 
-    private void receive(String in, int receiver){
+    private void receive(String in, int receiver) {
         StopWatch watch = new StopWatch();
         watch.start();
-        LOGGER.info("instance {} [x] Received '{}'", receiver,in);
+        LOGGER.info("instance {} [x] Received '{}'", receiver, in);
         doWork(in);
         watch.stop();
         LOGGER.info("instance {} [x] Done in {}", receiver, watch.getTotalTimeSeconds());
     }
 
-    private void doWork(String in){
-        for (char ch: in.toCharArray()){
-            if (ch =='.'){
+    private void doWork(String in) {
+        for (char ch : in.toCharArray()) {
+            if (ch == '.') {
                 ThreadUtil.sleep(1000);
             }
         }

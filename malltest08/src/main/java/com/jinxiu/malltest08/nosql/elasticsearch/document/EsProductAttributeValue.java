@@ -2,6 +2,7 @@ package com.jinxiu.malltest08.nosql.elasticsearch.document;
 
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.io.Serializable;
 
 /**
@@ -17,8 +18,9 @@ public class EsProductAttributeValue implements Serializable {
     //属性参数：0->规格；1->参数
     private Integer type;
     //属性名称
-    @Field(type=FieldType.Keyword)
+    @Field(type = FieldType.Keyword)
     private String name;
+
     public Long getId() {
         return id;
     }

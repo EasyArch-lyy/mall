@@ -1,6 +1,7 @@
 package com.jinxiu.malltesthutool.mbg.model;
 
 import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 public class PmsBrand implements Serializable {

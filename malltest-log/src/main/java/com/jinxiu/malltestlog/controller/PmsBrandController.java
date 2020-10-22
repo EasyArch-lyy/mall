@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 import java.util.List;
 
 /**
@@ -36,7 +37,7 @@ public class PmsBrandController {
     @ApiOperation("获取所有品牌列表")
     @RequestMapping(value = "listAll", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<List<PmsBrand>>getBrandList(){
+    public CommonResult<List<PmsBrand>> getBrandList() {
         return CommonResult.success(brandService.listAllBrand());
     }
 

@@ -23,6 +23,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
 import java.util.List;
 
 /**
@@ -30,7 +31,7 @@ import java.util.List;
  */
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled=true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UmsAdminService adminService;
@@ -60,7 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/admin/login", "/admin/register")// 对登录注册要允许匿名访问
                 .permitAll()
-                .antMatchers("/esProduct/**","/member/readHistory/**","/order/**")// 测试时放开
+                .antMatchers("/esProduct/**", "/member/readHistory/**", "/order/**")// 测试时放开
                 .permitAll()
                 .antMatchers(HttpMethod.OPTIONS)//跨域请求会先进行一次options请求
                 .permitAll()
@@ -96,14 +97,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             UmsAdmin admin = adminService.getAdminByUsername(username);
             if (admin != null) {
                 List<UmsPermission> permissionList = adminService.getPermissionList(admin.getId());
-                return new AdminUserDetails(admin,permissionList);
+                return new AdminUserDetails(admin, permissionList);
             }
             throw new UsernameNotFoundException("用户名或密码错误");
         };
     }
 
     @Bean
-    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter(){
+    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter() {
         return new JwtAuthenticationTokenFilter();
     }
 

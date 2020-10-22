@@ -38,20 +38,20 @@ public class PmsBrandController {
     @ApiOperation("获取所有品牌列表")
     @RequestMapping(value = "listAll", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<List<PmsBrand>> getBrandList(){
+    public CommonResult<List<PmsBrand>> getBrandList() {
         return CommonResult.success(brandService.listAllBrand());
     }
 
     @ApiOperation("添加品牌")
     @RequestMapping(value = "/create", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult createBrand(@RequestBody PmsBrand pmsBrand){
+    public CommonResult createBrand(@RequestBody PmsBrand pmsBrand) {
         CommonResult commonResult;
         int count = brandService.createBrand(pmsBrand);
         if (count == 1) {
             commonResult = CommonResult.success(pmsBrand);
             LOGGER.debug("createBrand success: {}", pmsBrand);
-        } else{
+        } else {
             commonResult = CommonResult.failed("操作失败");
             LOGGER.debug("createBrand failed: {}", pmsBrand);
         }

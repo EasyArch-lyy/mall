@@ -5,6 +5,7 @@ import com.jinxiu.malltest08.nosql.mongodb.repository.MemberReadHistoryRepositor
 import com.jinxiu.malltest08.service.MemberReadHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
 public class MemberReadHistoryServiceImpl implements MemberReadHistoryService {
     @Autowired
     private MemberReadHistoryRepository memberReadHistoryRepository;
+
     @Override
     public int create(MemberReadHistory memberReadHistory) {
         memberReadHistory.setId(null);
@@ -27,7 +29,7 @@ public class MemberReadHistoryServiceImpl implements MemberReadHistoryService {
     @Override
     public int delete(List<String> ids) {
         List<MemberReadHistory> deleteList = new ArrayList<>();
-        for(String id:ids){
+        for (String id : ids) {
             MemberReadHistory memberReadHistory = new MemberReadHistory();
             memberReadHistory.setId(id);
             deleteList.add(memberReadHistory);

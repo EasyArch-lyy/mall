@@ -1,6 +1,7 @@
 package com.jinxiu.malltestlog.service;
 
 import com.jinxiu.malltestlog.mbg.model.PmsBrand;
+
 import java.util.List;
 
 public interface PmsBrandService {

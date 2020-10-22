@@ -7,6 +7,7 @@ import org.mybatis.generator.api.dom.java.Field;
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.internal.DefaultCommentGenerator;
 import org.mybatis.generator.internal.util.StringUtility;
+
 import java.util.Properties;
 
 /**

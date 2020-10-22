@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
+
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -19,11 +20,10 @@ import java.io.IOException;
 
 /**
  * JWT登录授权过滤器
- *
+ * <p>
  * generateToken(UserDetails userDetails) :用于根据登录用户信息生成token
  * getUserNameFromToken(String token)：从token中获取登录用户的信息
  * validateToken(String token, UserDetails userDetails)：判断token是否还有效
- *
  */
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
@@ -44,7 +44,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
 
         String authHeader = request.getHeader(this.tokenHeader);
-        if(authHeader != null && authHeader.startsWith(this.tokenHead)){
+        if (authHeader != null && authHeader.startsWith(this.tokenHead)) {
             String authToken = authHeader.substring(this.tokenHead.length());
             String username = jwtTokenUtil.getUserNameFromToken(authToken);
             LOGGER.info("checking username:{}", username);

@@ -39,12 +39,12 @@
                 targetProject="malltest01\src\main\resources"/>
         <!--指定生成mapper接口的的路径-->
         <javaClientGenerator type="XMLMAPPER"
-                targetPackage="com.jinxiu.malltest01.mapper"
-                targetProject="malltest01\src\main\java"/>
+                             targetPackage="com.jinxiu.malltest01.mapper"
+                             targetProject="malltest01\src\main\java"/>
         <!--生成全部表tableName设为%-->
         <table tableName="pms_brand">
             <generatedKey column="id" sqlStatement="MySql"
-                identity="true"/>
+                          identity="true"/>
         </table>
     </context>
 </generatorConfiguration>

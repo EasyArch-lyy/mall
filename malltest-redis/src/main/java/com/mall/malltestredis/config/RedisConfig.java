@@ -29,7 +29,7 @@ public class RedisConfig extends CachingConfigurerSupport {
     /**
      * redis数据库自定义key
      */
-    public  static final String REDIS_KEY_DATABASE="mall";
+    public static final String REDIS_KEY_DATABASE = "mall";
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {

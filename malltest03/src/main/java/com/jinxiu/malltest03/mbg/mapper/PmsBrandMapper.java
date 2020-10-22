@@ -1,6 +1,7 @@
 package com.jinxiu.malltest03.mbg.mapper;
 
 import java.util.List;
+
 import com.jinxiu.malltest03.mbg.model.PmsBrand;
 import com.jinxiu.malltest03.mbg.model.PmsBrandExample;
 import org.apache.ibatis.annotations.Param;

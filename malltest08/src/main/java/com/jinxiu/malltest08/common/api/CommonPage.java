@@ -2,6 +2,7 @@ package com.jinxiu.malltest08.common.api;
 
 import com.github.pagehelper.PageInfo;
 import org.springframework.data.domain.Page;
+
 import java.util.List;
 
 /**

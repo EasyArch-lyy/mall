@@ -13,6 +13,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +24,7 @@ import java.util.List;
 @EnableSwagger2
 public class Swagger2Config {
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -60,7 +61,7 @@ public class Swagger2Config {
         return result;
     }
 
-    private SecurityContext getContextByPath(String pathRegex){
+    private SecurityContext getContextByPath(String pathRegex) {
         return SecurityContext.builder()
                 .securityReferences(defaultAuth())
                 .forPaths(PathSelectors.regex(pathRegex))

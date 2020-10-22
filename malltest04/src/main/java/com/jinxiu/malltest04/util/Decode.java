@@ -7,7 +7,7 @@ public class Decode {
 //    private PasswordDecoder passwordDecoder;
 
     public static void main(String[] args) {
-        String a= "";
+        String a = "";
 
     }
 }

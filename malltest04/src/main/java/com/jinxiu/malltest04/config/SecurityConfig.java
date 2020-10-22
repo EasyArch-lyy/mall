@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * SpringSecurity的配置
- *
+ * <p>
  * configure(HttpSecurity httpSecurity)：用于配置需要拦截的url路径、jwt过滤器及出异常后的处理器；
  * configure(AuthenticationManagerBuilder auth)：用于配置UserDetailsService及PasswordEncoder；
  * RestfulAccessDeniedHandler：当用户没有访问权限时的处理器，用于返回JSON格式的处理结果；
@@ -36,7 +36,6 @@ import java.util.List;
  * UserDetails：SpringSecurity定义用于封装用户信息的类（主要是用户信息和权限），需要自行实现；
  * PasswordEncoder：SpringSecurity定义的用于对密码进行编码及比对的接口，目前使用的是BCryptPasswordEncoder；
  * JwtAuthenticationTokenFilter：在用户名和密码校验前添加的过滤器，如果有jwt的token，会自行根据token信息进行登录。
- *
  */
 
 @Configuration
@@ -51,7 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private RestAuthentacationEntryPoint restAuthentacationEntryPoint;
 
-    protected void configure(HttpSecurity httpSecurity) throws Exception{
+    protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf()// 由于使用的是JWT，我们这里不需要csrf
                 .disable()
                 .sessionManagement()// 基于token，所以不需要session
@@ -68,7 +67,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-resources/**",
                         "/v2/api-docs/**")
                 .permitAll()
-                .antMatchers("/admin/login", "/admin/register","/sso/**")// 对登录注册要允许匿名访问
+                .antMatchers("/admin/login", "/admin/register", "/sso/**")// 对登录注册要允许匿名访问
                 .permitAll()
                 //.antMatchers("/**")//测试时全部运行访问
                 //.permitAll()
@@ -88,15 +87,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public UserDetailsService userDetailsService(){
+    public UserDetailsService userDetailsService() {
         return username -> {
             UmsAdmin admin = adminService.getAdminByUsername(username);
-            if(admin != null){
+            if (admin != null) {
                 List<UmsPermission> permissionList = adminService.getPermissionList(admin.getId());
                 return new AdminUserDetails(admin, permissionList);
             }
@@ -105,12 +104,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter(){
+    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter() {
         return new JwtAuthenticationTokenFilter();
     }
 
     @Bean
-    public AuthenticationManager authenticationManager() throws Exception{
+    public AuthenticationManager authenticationManager() throws Exception {
         return super.authenticationManager();
     }
 }

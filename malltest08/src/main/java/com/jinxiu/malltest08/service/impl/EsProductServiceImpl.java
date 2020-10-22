@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -27,6 +28,7 @@ public class EsProductServiceImpl implements EsProductService {
     private EsProductDao productDao;
     @Autowired
     private EsProductRepository productRepository;
+
     @Autowired
 //    private ElasticsearchTemplate elasticsearchTemplate;
 

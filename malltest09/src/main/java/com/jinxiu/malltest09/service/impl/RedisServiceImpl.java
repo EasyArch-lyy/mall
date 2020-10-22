@@ -4,6 +4,7 @@ import com.jinxiu.malltest09.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -36,6 +37,6 @@ public class RedisServiceImpl implements RedisService {
 
     @Override
     public Long increment(String key, long delta) {
-        return stringRedisTemplate.opsForValue().increment(key,delta);
+        return stringRedisTemplate.opsForValue().increment(key, delta);
     }
 }

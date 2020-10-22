@@ -8,22 +8,22 @@ import org.springframework.context.annotation.Configuration;
 public class WorkRabbitConfig {
 
     @Bean
-    public Queue workQueue(){
+    public Queue workQueue() {
         return new Queue("work.hello");
     }
 
     @Bean
-    public WorkReceiver workReceiver (){
+    public WorkReceiver workReceiver() {
         return new WorkReceiver(1);
     }
 
     @Bean
-    public WorkReceiver workReceiver2(){
+    public WorkReceiver workReceiver2() {
         return new WorkReceiver(2);
     }
 
     @Bean
-    public WorkSender workSender(){
+    public WorkSender workSender() {
         return new WorkSender();
     }
 }

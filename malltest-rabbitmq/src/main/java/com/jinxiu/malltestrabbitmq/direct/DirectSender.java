@@ -12,7 +12,7 @@ public class DirectSender {
 
     private static final String exchangeName = "";
 
-    private final String[] keys= {"orange", "black", "green"};
+    private final String[] keys = {"orange", "black", "green"};
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DirectSender.class);
 

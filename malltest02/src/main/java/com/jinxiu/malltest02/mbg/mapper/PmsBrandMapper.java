@@ -2,7 +2,9 @@ package com.jinxiu.malltest02.mbg.mapper;
 
 import com.jinxiu.malltest02.mbg.model.PmsBrand;
 import com.jinxiu.malltest02.mbg.model.PmsBrandExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsBrandMapper {

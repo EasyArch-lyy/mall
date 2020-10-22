@@ -1,6 +1,7 @@
 package com.jinxiu.malltest08.service;
 
 import com.jinxiu.malltest08.mbg.model.PmsBrand;
+
 import java.util.List;
 
 /**

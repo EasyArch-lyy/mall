@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.data.domain.Page;
+
 import java.util.List;
 
 /**
@@ -34,7 +35,7 @@ public class EsProductController {
     @ApiOperation(value = "导入所有数据中商品到es")
     @RequestMapping(value = "/importAll", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult<Integer> importAllList(){
+    public CommonResult<Integer> importAllList() {
         int count = esProductService.importAll();
         return CommonResult.success(count);
     }
@@ -50,7 +51,7 @@ public class EsProductController {
     @ApiOperation(value = "根据id批量删除商品")
     @RequestMapping(value = "/delete/batch", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult<Object>delete(@RequestParam("ids") List<Long> ids){
+    public CommonResult<Object> delete(@RequestParam("ids") List<Long> ids) {
         esProductService.delete(ids);
         return CommonResult.success(null);
     }
@@ -70,9 +71,9 @@ public class EsProductController {
     @ApiOperation(value = "简单搜索")
     @RequestMapping(value = "/search/simple", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<CommonPage<EsProduct>>search(@RequestParam(required = false)String keyword,
-                                                     @RequestParam(required = false, defaultValue = "0") Integer pageNum,
-                                                     @RequestParam(required = false, defaultValue = "5") Integer pageSize){
+    public CommonResult<CommonPage<EsProduct>> search(@RequestParam(required = false) String keyword,
+                                                      @RequestParam(required = false, defaultValue = "0") Integer pageNum,
+                                                      @RequestParam(required = false, defaultValue = "5") Integer pageSize) {
 
         Page<EsProduct> esProductPage = esProductService.search(keyword, pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(esProductPage));

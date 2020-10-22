@@ -3,6 +3,7 @@ package com.jinxiu.malltest09.dao;
 
 import com.jinxiu.malltest09.mbg.model.UmsPermission;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**

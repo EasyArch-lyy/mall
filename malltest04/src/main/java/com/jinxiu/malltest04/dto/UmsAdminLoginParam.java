@@ -2,6 +2,7 @@ package com.jinxiu.malltest04.dto;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import io.swagger.annotations.ApiModelProperty;
+
 /**
  * 用户登录参数
  */

@@ -3,6 +3,7 @@ package com.jinxiu.malltestoss.util;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 /**
@@ -23,7 +24,7 @@ public class EncryptorUtil {
     }
 
     @Test
-    public void encry(){
+    public void encry() {
         EnvironmentStringPBEConfig config = new EnvironmentStringPBEConfig();
         config.setAlgorithm("PBEWithMD5AndDES");
         config.setPassword("liky");
@@ -34,7 +35,7 @@ public class EncryptorUtil {
     }
 
     @Test
-    public void run(/*String cmd*/){
+    public void run(/*String cmd*/) {
         String cmd = "dir";
         Runtime run = Runtime.getRuntime();
         try {

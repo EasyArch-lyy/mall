@@ -3,6 +3,7 @@ package com.jinxiu.malltest09.nosql.mongodb.document;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
 /**

@@ -12,11 +12,11 @@ public class TopicReceiver {
     private static final Logger LOGGER = LoggerFactory.getLogger(TopicReceiver.class);
 
     @RabbitListener
-    public void receive1(String in){
+    public void receive1(String in) {
         receive(in, 1);
     }
 
-    public void receive(String in, int receiver){
+    public void receive(String in, int receiver) {
         StopWatch watch = new StopWatch();
         watch.start();
         LOGGER.info("instance {} [x] Received '{}'", receiver, in);
@@ -25,9 +25,9 @@ public class TopicReceiver {
         LOGGER.info("instance {} [x] Done in {}", receiver, watch.getTotalTimeSeconds());
     }
 
-    private void doWork(String in){
-        for(char ch: in.toCharArray()){
-            if(ch == '.'){
+    private void doWork(String in) {
+        for (char ch : in.toCharArray()) {
+            if (ch == '.') {
                 ThreadUtil.sleep(1000);
             }
         }

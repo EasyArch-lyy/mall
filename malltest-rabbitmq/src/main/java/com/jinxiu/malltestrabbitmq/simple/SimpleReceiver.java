@@ -11,7 +11,7 @@ public class SimpleReceiver {
     private static final Logger LOGGER = LoggerFactory.getLogger(SimpleReceiver.class);
 
     @RabbitHandler
-    public void receive(String in){
+    public void receive(String in) {
         LOGGER.info("[x] Received '{}'", in);
     }
 }

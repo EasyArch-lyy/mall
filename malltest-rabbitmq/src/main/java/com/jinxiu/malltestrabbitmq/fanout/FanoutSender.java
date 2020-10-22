@@ -14,7 +14,7 @@ public class FanoutSender {
 
     public static final String exchangeName = "exchange.fanout";
 
-    public void send(int index){
+    public void send(int index) {
         StringBuilder builder = new StringBuilder("Hello");
         int limitIndex = index % 3 + 1;
         for (int i = 0; i < limitIndex; i++) {

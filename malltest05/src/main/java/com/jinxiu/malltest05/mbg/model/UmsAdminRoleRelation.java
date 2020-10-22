@@ -1,6 +1,7 @@
 package com.jinxiu.malltest05.mbg.model;
 
 import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 public class UmsAdminRoleRelation implements Serializable {

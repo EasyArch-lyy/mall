@@ -1,6 +1,7 @@
 package com.jinxiu.malltest07.dto;
 
 import io.swagger.annotations.ApiModelProperty;
+
 import javax.validation.constraints.NotEmpty;
 
 /**

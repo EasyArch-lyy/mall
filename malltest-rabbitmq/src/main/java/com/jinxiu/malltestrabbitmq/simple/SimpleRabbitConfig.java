@@ -7,17 +7,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SimpleRabbitConfig {
     @Bean
-    public Queue hello(){
+    public Queue hello() {
         return new Queue("simple.hello");
     }
 
     @Bean
-    public SimpleSender simpleSender(){
+    public SimpleSender simpleSender() {
         return new SimpleSender();
     }
 
     @Bean
-    public SimpleReceiver simpleReceiver(){
+    public SimpleReceiver simpleReceiver() {
         return new SimpleReceiver();
     }
 }

@@ -2,7 +2,9 @@ package com.jinxiu.malltest06.mbg.mapper;
 
 import com.jinxiu.malltest06.mbg.model.UmsAdminRoleRelation;
 import com.jinxiu.malltest06.mbg.model.UmsAdminRoleRelationExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsAdminRoleRelationMapper {

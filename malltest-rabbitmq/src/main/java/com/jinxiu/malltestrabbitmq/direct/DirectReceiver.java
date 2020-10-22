@@ -11,26 +11,27 @@ public class DirectReceiver {
     private static final Logger LOGGER = LoggerFactory.getLogger(DirectReceiver.class);
 
     @RabbitListener(queues = "#{directQueue1.name}")
-    public void receive1(String in){
+    public void receive1(String in) {
         receive(in, 1);
     }
 
     @RabbitListener(queues = "#{directQueue2.name}")
-    public void receive2(String in){
-        receive(in,2);
+    public void receive2(String in) {
+        receive(in, 2);
     }
 
-    private void receive(String in, int receiver){
+    private void receive(String in, int receiver) {
         StopWatch watch = new StopWatch();
         watch.start();
         LOGGER.info("instance {} [x] Received '{}'", receiver, in);
         doWork(in);
         watch.stop();
-        LOGGER.info("instance {} [x] Done in {}",receiver, watch.getTotalTimeSeconds());
+        LOGGER.info("instance {} [x] Done in {}", receiver, watch.getTotalTimeSeconds());
     }
-    private void doWork(String in){
-        for (char ch: in.toCharArray()){
-            if(ch == '.'){
+
+    private void doWork(String in) {
+        for (char ch : in.toCharArray()) {
+            if (ch == '.') {
                 ThreadUtil.sleep(1000);
             }
         }

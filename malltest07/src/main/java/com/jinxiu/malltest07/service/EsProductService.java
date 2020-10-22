@@ -2,6 +2,7 @@ package com.jinxiu.malltest07.service;
 
 import com.jinxiu.malltest07.nosql.elasticsearch.document.EsProduct;
 import org.springframework.data.domain.Page;
+
 import java.util.List;
 
 /**

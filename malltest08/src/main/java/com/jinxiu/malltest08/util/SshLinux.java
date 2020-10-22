@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +20,7 @@ public class SshLinux {
 
     public static void main(String[] args) {
         Connection conn = login("39.100.149.36", "root", "A1qaz0plm");
-        String a = execute(conn,"");
+        String a = execute(conn, "");
         System.out.println(a);
     }
 

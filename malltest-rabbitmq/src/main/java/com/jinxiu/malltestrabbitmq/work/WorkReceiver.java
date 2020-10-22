@@ -14,12 +14,12 @@ public class WorkReceiver {
 
     private final int instance;
 
-    public WorkReceiver(int i){
+    public WorkReceiver(int i) {
         this.instance = i;
     }
 
     @RabbitHandler
-    public void recceive(String in){
+    public void recceive(String in) {
         StopWatch watch = new StopWatch();
         watch.start();
         LOGGER.info("instance {} [x] Received '{}'", this.instance, in);
@@ -27,7 +27,7 @@ public class WorkReceiver {
         LOGGER.info("instance {} [x] Done in {}", this.instance, watch.getTotalTimeSeconds());
     }
 
-    private void doWork(String in){
+    private void doWork(String in) {
         for (char ch : in.toCharArray()) {
             if (ch == '.') {
                 ThreadUtil.sleep(1000);

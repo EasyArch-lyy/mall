@@ -2,7 +2,9 @@ package com.jinxiu.malltest08.mbg.mapper;
 
 import com.jinxiu.malltest08.mbg.model.UmsPermission;
 import com.jinxiu.malltest08.mbg.model.UmsPermissionExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsPermissionMapper {

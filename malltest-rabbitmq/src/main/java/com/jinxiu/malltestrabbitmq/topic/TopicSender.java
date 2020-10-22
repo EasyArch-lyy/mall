@@ -16,7 +16,7 @@ public class TopicSender {
 
     protected final String[] keys = {"quick.orange.rabbit", "lazy.orange.elephant", "quick.orange.fox", "lazy.brown.fox", "lazy.pink.rabbit", "quick.brown.fox"};
 
-    public void send(int index){
+    public void send(int index) {
         StringBuilder builder = new StringBuilder("Hello to");
         int limitIndex = index % keys.length;
         String key = keys[limitIndex];

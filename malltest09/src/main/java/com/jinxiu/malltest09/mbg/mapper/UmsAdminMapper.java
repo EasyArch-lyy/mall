@@ -2,7 +2,9 @@ package com.jinxiu.malltest09.mbg.mapper;
 
 import com.jinxiu.malltest09.mbg.model.UmsAdmin;
 import com.jinxiu.malltest09.mbg.model.UmsAdminExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsAdminMapper {

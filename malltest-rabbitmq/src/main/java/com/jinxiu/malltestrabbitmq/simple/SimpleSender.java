@@ -14,7 +14,7 @@ public class SimpleSender {
 
     private static final String queueName = "simple.hello";
 
-    public void send(){
+    public void send() {
         String message = "Hello World";
         this.template.convertAndSend(queueName, message);
         LOGGER.info("[x] Send '{}'", message);

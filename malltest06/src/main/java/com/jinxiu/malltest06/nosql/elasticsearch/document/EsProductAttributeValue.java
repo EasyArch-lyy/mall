@@ -2,6 +2,7 @@ package com.jinxiu.malltest06.nosql.elasticsearch.document;
 
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.io.Serializable;
 
 /**
