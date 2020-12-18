@@ -1,6 +1,0 @@
-logstash:
-  host: 39.100.149.36
-
-logging:
-  level:
-    root: debug

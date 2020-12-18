@@ -18,15 +18,15 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
   # 指定服务名称
-  mall-tiny-docker-compose:
+  malltest-docker-compose:
     # 指定服务使用的镜像
     image: malltest/malltest-docker-compose:0.0.1-SNAPSHOT
     # 指定容器名称
     container_name: malltest-docker-compose
     # 指定服务运行的端口
     ports:
-      - 8081:8080
+      - 8081:8901
     # 指定容器中需要挂载的文件
     volumes:
       - /etc/localtime:/etc/localtime
-      - /mydata/app/mall-tiny-docker-compose/logs:/var/logs
+      - /mydata/app/malltest-docker-compose/logs:/var/logs
