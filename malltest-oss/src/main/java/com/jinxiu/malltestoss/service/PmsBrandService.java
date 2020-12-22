@@ -1,7 +1,7 @@
 package com.jinxiu.malltestoss.service;
 
-import com.jinxiu.malltestoss.mbg.model.PmsBrand;
 
+import com.jinxiu.malltestoss.mbg.model.PmsBrand;
 import java.util.List;
 
 /**

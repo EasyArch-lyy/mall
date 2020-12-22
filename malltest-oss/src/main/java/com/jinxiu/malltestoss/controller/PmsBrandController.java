@@ -13,8 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+
 
 /**
  * 品牌管理Controller
@@ -55,7 +55,6 @@ public class PmsBrandController {
     @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult updateBrand(@PathVariable("id") Long id, @RequestBody PmsBrand pmsBrandDto, BindingResult result) {
-
         CommonResult commonResult;
         int count = brandService.updateBrand(id, pmsBrandDto);
         if (count == 1) {

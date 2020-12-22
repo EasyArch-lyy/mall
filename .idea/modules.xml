@@ -9,10 +9,13 @@
       <module fileurl="file://$PROJECT_DIR$/malltest-docker/malltest-docker.iml" filepath="$PROJECT_DIR$/malltest-docker/malltest-docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-docker-compose/malltest-docker-compose.iml" filepath="$PROJECT_DIR$/malltest-docker-compose/malltest-docker-compose.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" filepath="$PROJECT_DIR$/malltest-hutool/malltest-hutool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-jenkins/malltest-jenkins.iml" filepath="$PROJECT_DIR$/malltest-jenkins/malltest-jenkins.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-log/malltest-log.iml" filepath="$PROJECT_DIR$/malltest-log/malltest-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-oss/malltest-oss.iml" filepath="$PROJECT_DIR$/malltest-oss/malltest-oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-plus/malltest-plus.iml" filepath="$PROJECT_DIR$/malltest-plus/malltest-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-rabbitmq/malltest-rabbitmq.iml" filepath="$PROJECT_DIR$/malltest-rabbitmq/malltest-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest-redis/malltest-redis.iml" filepath="$PROJECT_DIR$/malltest-redis/malltest-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/malltest-stream/malltest-stream.iml" filepath="$PROJECT_DIR$/malltest-stream/malltest-stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest01/malltest01.iml" filepath="$PROJECT_DIR$/malltest01/malltest01.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest02/malltest02.iml" filepath="$PROJECT_DIR$/malltest02/malltest02.iml" />
       <module fileurl="file://$PROJECT_DIR$/malltest03/malltest03.iml" filepath="$PROJECT_DIR$/malltest03/malltest03.iml" />

@@ -8,8 +8,10 @@
     <file url="file://$PROJECT_DIR$/malltest-docker-compose/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-docker/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-hutool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/malltest-jenkins/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-log/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/malltest-oss/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-rabbitmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malltest-redis/src/main/java" charset="UTF-8" />

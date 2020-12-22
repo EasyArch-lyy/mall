@@ -23,6 +23,10 @@
         <option value="$PROJECT_DIR$/malltest09/pom.xml" />
         <option value="$PROJECT_DIR$/malltest-docker-compose/pom.xml" />
         <option value="$PROJECT_DIR$/malltest-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/malltest-jenkins/pom.xml" />
       </list>
     </option>
   </component>

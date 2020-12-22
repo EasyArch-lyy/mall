@@ -1,7 +1,6 @@
 package com.jinxiu.malltestoss.common.api;
 
 import com.github.pagehelper.PageInfo;
-
 import java.util.List;
 
 /**

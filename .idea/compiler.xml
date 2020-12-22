@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="malltest-docker" />
         <module name="malltest-log" />
+        <module name="malltest-jenkins" />
         <module name="malltest-docker-compose" />
         <module name="malltest-stream" />
         <module name="elk" />
@@ -23,16 +25,11 @@
         <module name="malltest02" />
         <module name="malltest-hutool" />
         <module name="eureka" />
+        <module name="malltest-oss" />
         <module name="malltest-aop" />
         <module name="malltest-redis" />
         <module name="malltest-plus" />
         <module name="malltest01" />
-      </profile>
-      <profile name="Annotation profile for malltestoss" enabled="true">
-        <sourceOutputDir name="../malltestoss/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../malltestoss/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="malltest-oss" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +40,7 @@
       <module name="malltest-docker" target="1.8" />
       <module name="malltest-docker-compose" target="1.8" />
       <module name="malltest-hutool" target="1.8" />
+      <module name="malltest-jenkins" target="1.8" />
       <module name="malltest-log" target="1.8" />
       <module name="malltest-oss" target="1.8" />
       <module name="malltest-plus" target="1.8" />
@@ -69,6 +67,7 @@
       <module name="malltest-docker" options="-parameters" />
       <module name="malltest-docker-compose" options="-parameters" />
       <module name="malltest-hutool" options="-parameters" />
+      <module name="malltest-jenkins" options="-parameters" />
       <module name="malltest-log" options="-parameters" />
       <module name="malltest-oss" options="-parameters" />
       <module name="malltest-plus" options="-parameters" />

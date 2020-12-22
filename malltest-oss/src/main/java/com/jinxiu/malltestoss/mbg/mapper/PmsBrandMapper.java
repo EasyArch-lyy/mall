@@ -1,14 +1,11 @@
 package com.jinxiu.malltestoss.mbg.mapper;
 
+import java.util.List;
 import com.jinxiu.malltestoss.mbg.model.PmsBrand;
 import com.jinxiu.malltestoss.mbg.model.PmsBrandExample;
-
-import java.util.List;
-
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsBrandMapper {
-
     int countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);
