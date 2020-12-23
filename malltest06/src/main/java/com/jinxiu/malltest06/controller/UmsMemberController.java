@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Api(tags = "UmsMemberController", description = "会员登录注册管理")
 @RequestMapping("/sso")
 public class UmsMemberController {
-
     @Autowired
     private UmsMemberService memberService;
 
@@ -26,7 +25,6 @@ public class UmsMemberController {
     @RequestMapping(value = "/getAuthCode", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult getAuthCode(@RequestParam String telephone) {
-
         return memberService.generateAuthCode(telephone);
     }
 

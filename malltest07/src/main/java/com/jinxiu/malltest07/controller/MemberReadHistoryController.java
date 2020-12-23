@@ -8,7 +8,6 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 /**
@@ -18,7 +17,6 @@ import java.util.List;
 @Api(tags = "MemberReadHistoryController", description = "会员商品浏览记录管理")
 @RequestMapping("/member/readHistory")
 public class MemberReadHistoryController {
-
     @Autowired
     private MemberReadHistoryService memberReadHistoryService;
 
@@ -26,7 +24,6 @@ public class MemberReadHistoryController {
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult create(@RequestBody MemberReadHistory memberReadHistory) {
-
         int count = memberReadHistoryService.create(memberReadHistory);
         if (count > 0) {
             return CommonResult.success(count);

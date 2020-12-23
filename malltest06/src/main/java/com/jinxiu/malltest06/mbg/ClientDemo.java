@@ -15,7 +15,7 @@ public class ClientDemo {
         Settings settings = Settings.builder().put("cluster.name", "elasticsearch").build();
         // 创建client
         TransportClient client = new PreBuiltTransportClient(settings)
-                .addTransportAddress(new TransportAddress(InetAddress.getByName("39.100.149.36"), 9300));
+                .addTransportAddress(new TransportAddress(InetAddress.getByName("39.100.149.36"), 9301));
         // 搜索数据
         GetResponse response = client.prepareGet("website", "blog", "1").execute().actionGet();
         // 输出结果

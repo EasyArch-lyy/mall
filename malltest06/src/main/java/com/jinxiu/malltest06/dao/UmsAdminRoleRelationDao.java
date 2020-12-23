@@ -2,7 +2,6 @@ package com.jinxiu.malltest06.dao;
 
 import com.jinxiu.malltest06.mbg.model.UmsPermission;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 /**

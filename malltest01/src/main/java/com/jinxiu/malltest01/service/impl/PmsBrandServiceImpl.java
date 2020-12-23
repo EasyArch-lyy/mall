@@ -7,7 +7,6 @@ import com.jinxiu.malltest01.model.PmsBrandExample;
 import com.jinxiu.malltest01.service.PmsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**
@@ -15,8 +14,7 @@ import java.util.List;
  */
 @Service
 public class PmsBrandServiceImpl implements PmsBrandService {
-
-    @Autowired(required = true)
+    @Autowired
     private PmsBrandMapper brandMapper;
 
     @Override
@@ -31,20 +29,17 @@ public class PmsBrandServiceImpl implements PmsBrandService {
 
     @Override
     public int updateBrand(Long id, PmsBrand brand) {
-
         brand.setId(id);
         return brandMapper.updateByPrimaryKeySelective(brand);
     }
 
     @Override
     public int deleteBrand(Long id) {
-
         return brandMapper.deleteByPrimaryKey(id);
     }
 
     @Override
     public List<PmsBrand> listBrand(int pageNum, int pageSize) {
-
         PageHelper.startPage(pageNum, pageSize);
         return brandMapper.selectByExample(new PmsBrandExample());
     }

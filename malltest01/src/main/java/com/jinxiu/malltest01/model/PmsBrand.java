@@ -3,8 +3,8 @@ package com.jinxiu.malltest01.model;
 import java.io.Serializable;
 
 public class PmsBrand implements Serializable {
-
     private Long id;
+
     private String name;
 
     /**

@@ -1,5 +1,6 @@
 package com.jinxiu.malltest06.service;
 
+
 import com.jinxiu.malltest06.common.api.CommonResult;
 
 /**

@@ -1,7 +1,6 @@
 package com.jinxiu.malltest07.service;
 
 import com.jinxiu.malltest07.nosql.mongodb.document.MemberReadHistory;
-
 import java.util.List;
 
 /**

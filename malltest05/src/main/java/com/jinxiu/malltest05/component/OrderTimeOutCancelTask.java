@@ -18,7 +18,7 @@ public class OrderTimeOutCancelTask {
      */
     @Scheduled(cron = "0 0/10 * ? * ?")
     private void cancelTimeOutOrder() {
-        // TODO: 2019/5/3 此处应调用取消订单的方法，具体查看mall项目源码
+        // 调用取消订单的方法
         LOGGER.info("取消订单，并根据sku编号释放锁定库存");
     }
 }

@@ -7,7 +7,6 @@ import com.jinxiu.malltest05.mbg.model.PmsBrandExample;
 import com.jinxiu.malltest05.service.PmsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**

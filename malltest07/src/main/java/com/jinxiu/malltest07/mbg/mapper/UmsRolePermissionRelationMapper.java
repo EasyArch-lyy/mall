@@ -2,9 +2,7 @@ package com.jinxiu.malltest07.mbg.mapper;
 
 import com.jinxiu.malltest07.mbg.model.UmsRolePermissionRelation;
 import com.jinxiu.malltest07.mbg.model.UmsRolePermissionRelationExample;
-
 import java.util.List;
-
 import org.apache.ibatis.annotations.Param;
 
 public interface UmsRolePermissionRelationMapper {

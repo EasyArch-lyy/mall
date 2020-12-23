@@ -1,12 +1,10 @@
 package com.jinxiu.malltest04.mbg.model;
 
 import io.swagger.annotations.ApiModelProperty;
-
 import java.io.Serializable;
 import java.util.Date;
 
 public class UmsPermission implements Serializable {
-
     private Long id;
 
     @ApiModelProperty(value = "父级权限id")
